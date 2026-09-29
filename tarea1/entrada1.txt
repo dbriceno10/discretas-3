@@ -1,0 +1,4 @@
+3
+mi_variable1
+VALOR_MAX
+9variable

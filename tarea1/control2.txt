@@ -1,0 +1,59 @@
+Cadena: _variable
+C-Style: RECHAZADA
+Python: ACEPTADA
+COBOL: RECHAZADA
+
+Cadena: variable_
+C-Style: RECHAZADA
+Python: ACEPTADA
+COBOL: RECHAZADA
+
+Cadena: VARIABLE-1
+C-Style: RECHAZADA
+Python: RECHAZADA
+COBOL: ACEPTADA
+
+Cadena: var123_abc
+C-Style: ACEPTADA
+Python: ACEPTADA
+COBOL: RECHAZADA
+
+Cadena: 123var
+C-Style: RECHAZADA
+Python: RECHAZADA
+COBOL: RECHAZADA
+
+Cadena: VAR-MAX-
+C-Style: RECHAZADA
+Python: RECHAZADA
+COBOL: RECHAZADA
+
+Cadena: A
+C-Style: RECHAZADA
+Python: ACEPTADA
+COBOL: ACEPTADA
+
+Cadena: z
+C-Style: ACEPTADA
+Python: ACEPTADA
+COBOL: RECHAZADA
+
+Cadena: mi-variable
+C-Style: RECHAZADA
+Python: RECHAZADA
+COBOL: RECHAZADA
+
+Cadena: __init__
+C-Style: RECHAZADA
+Python: ACEPTADA
+COBOL: RECHAZADA
+
+Cadena: DATA-BASE-2026
+C-Style: RECHAZADA
+Python: RECHAZADA
+COBOL: ACEPTADA
+
+Cadena: var name
+C-Style: RECHAZADA
+Python: RECHAZADA
+COBOL: RECHAZADA

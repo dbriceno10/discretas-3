@@ -1,0 +1,13 @@
+12
+_variable
+variable_
+VARIABLE-1
+var123_abc
+123var
+VAR-MAX-
+A
+z
+mi-variable
+__init__
+DATA-BASE-2026
+var name

@@ -1,0 +1,14 @@
+Cadena: mi_variable1
+C-Style: ACEPTADA
+Python: ACEPTADA
+COBOL: RECHAZADA
+
+Cadena: VALOR_MAX
+C-Style: RECHAZADA
+Python: ACEPTADA
+COBOL: RECHAZADA
+
+Cadena: 9variable
+C-Style: RECHAZADA
+Python: RECHAZADA
+COBOL: RECHAZADA
