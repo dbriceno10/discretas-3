@@ -16,7 +16,7 @@ string validateCStyle(const string &str) {
   if (str.empty()) {
     return REJECTED;
   }
-  // maquina de 3 estados qo inicial, q1 final y q2
+  // maquina de 3 estados q0 inicial, q1 final y q2
   int state = 0; // state inicial q0
 
   for (char c : str) {
@@ -65,7 +65,7 @@ string validatePython(const string &str) {
   if (str.empty()) {
     return REJECTED;
   }
-  // maquina de 3 estados qo inicial, q1 final y q2
+  // maquina de 3 estados q0 inicial, q1 final y q2
   int state = 0; // state inicial q0
 
   for (char c : str) {
@@ -100,7 +100,7 @@ string validateCOBOL(const string &str) {
   if (str.empty()) {
     return REJECTED;
   }
-  // maquina de 2 estados qo inicial y q1 final
+  // maquina de 2 estados q0 inicial y q1 final
   int state = 0; // state inicial q0
 
   for (char c : str) {
@@ -150,15 +150,14 @@ int main() {
     return 0;
   }
 
-  // Consumir el salto de línea residual después de leer K
+  // Consumir el salto de línea residual después de leer el numero de lineas a
+  // evaluar
   string temp;
   getline(cin, temp);
 
   for (int i = 0; i < nroK; ++i) {
     string str;
-    // Se utiliza getline para capturar toda la línea, garantizando que un
-    // espacio intermedio provoque rechazo directo al no pertenecer al
-    // alfabeto.
+    // se obtiene la cadena completa
     getline(cin, str);
 
     cout << "Cadena: " << str << "\n";
@@ -166,8 +165,7 @@ int main() {
     cout << "Python: " << validatePython(str) << "\n";
     cout << "COBOL: " << validateCOBOL(str) << "\n";
 
-    // Imprime una línea en blanco entre resultados si no es la última
-    // evaluación
+    // separador
     if (i < nroK - 1) {
       cout << "\n";
     }
