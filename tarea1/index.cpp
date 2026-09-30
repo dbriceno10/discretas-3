@@ -12,14 +12,14 @@ bool validateLowerCase(char c) { return c >= 'a' && c <= 'z'; }
 bool validateDigit(char c) { return c >= '0' && c <= '9'; }
 
 // AFD C-Style
-string validateCStyle(const string &s) {
-  if (s.empty()) {
+string validateCStyle(const string &str) {
+  if (str.empty()) {
     return REJECTED;
   }
   // maquina de 3 estados qo inicial, q1 final y q2
   int state = 0; // state inicial q0
 
-  for (char c : s) {
+  for (char c : str) {
     if (state == 0) {
       // transision inicial con minuscula
       if (validateLowerCase(c)) {
@@ -61,14 +61,14 @@ string validateCStyle(const string &s) {
 }
 
 // AFD Python
-string validatePython(const string &s) {
-  if (s.empty()) {
+string validatePython(const string &str) {
+  if (str.empty()) {
     return REJECTED;
   }
   // maquina de 3 estados qo inicial, q1 final y q2
   int state = 0; // state inicial q0
 
-  for (char c : s) {
+  for (char c : str) {
     if (state == 0) {
       // transicion inicial con mayuscula, minuscula o guion bajo
       if (validateLowerCase(c) || validateUpperCase(c) || c == UNDER_SCORE) {
@@ -96,14 +96,14 @@ string validatePython(const string &s) {
 }
 
 // AFD COBOL
-string validateCOBOL(const string &s) {
-  if (s.empty()) {
+string validateCOBOL(const string &str) {
+  if (str.empty()) {
     return REJECTED;
   }
   // maquina de 2 estados qo inicial y q1 final
   int state = 0; // state inicial q0
 
-  for (char c : s) {
+  for (char c : str) {
     if (state == 0) {
       // transicion inicial con mayuscula
       if (validateUpperCase(c)) {
@@ -145,29 +145,30 @@ string validateCOBOL(const string &s) {
 }
 
 int main() {
-  int k;
-  if (!(cin >> k))
+  int nroK;
+  if (!(cin >> nroK)) {
     return 0;
+  }
 
   // Consumir el salto de línea residual después de leer K
   string temp;
   getline(cin, temp);
 
-  for (int i = 0; i < k; ++i) {
-    string s;
+  for (int i = 0; i < nroK; ++i) {
+    string str;
     // Se utiliza getline para capturar toda la línea, garantizando que un
     // espacio intermedio provoque rechazo directo al no pertenecer al
     // alfabeto.
-    getline(cin, s);
+    getline(cin, str);
 
-    cout << "Cadena: " << s << "\n";
-    cout << "C-Style: " << validateCStyle(s) << "\n";
-    cout << "Python: " << validatePython(s) << "\n";
-    cout << "COBOL: " << validateCOBOL(s) << "\n";
+    cout << "Cadena: " << str << "\n";
+    cout << "C-Style: " << validateCStyle(str) << "\n";
+    cout << "Python: " << validatePython(str) << "\n";
+    cout << "COBOL: " << validateCOBOL(str) << "\n";
 
     // Imprime una línea en blanco entre resultados si no es la última
     // evaluación
-    if (i < k - 1) {
+    if (i < nroK - 1) {
       cout << "\n";
     }
   }
