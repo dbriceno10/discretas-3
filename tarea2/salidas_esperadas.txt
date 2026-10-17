@@ -1,0 +1,279 @@
+Caso 1:
+
+T = (S, I, f, S0)
+
+S = {s1, s2, s3}
+
+I = {a, b}
+
+S0 = s1
+
+f = {
+
+(s1, a, s3, a, R),
+
+(s3, a, s3, a, R),
+
+(s3, b, s2, b, R)
+
+}
+
+Aceptada
+
+Rechazada
+
+Caso 2:
+
+T = (S, I, f, S0)
+
+S = {s1, s2, s3}
+
+I = {a}
+
+S0 = s1
+
+f = {
+
+(s1, a, s3, a, R),
+
+(s3, a, s3, a, R),
+
+(s3, B, s2, B, -)
+
+}
+
+Aceptada
+
+Caso 3:
+
+T = (S, I, f, S0)
+
+S = {s1, s2}
+
+I = {a, b}
+
+S0 = s1
+
+f = {
+
+(s1, b, s2, b, R)
+
+}
+
+Aceptada
+
+Rechazada
+
+Aceptada
+
+Caso 4:
+
+T = (S, I, f, S0)
+
+S = {s1, s2}
+
+I = {a, b}
+
+S0 = s1
+
+f = {
+
+(s1, a, s1, a, R),
+
+(s1, B, s2, B, R)
+
+}
+
+Aceptada
+
+Aceptada
+
+Rechazada
+
+Caso 5:
+
+T = (S, I, f, S0)
+
+S = {s1, s2}
+
+I = {a, b}
+
+S0 = s1
+
+f = {
+
+(s1, a, s1, b, R),
+
+(s1, B, s2, B, -)
+
+}
+
+Aceptada
+
+Aceptada
+
+Caso 6:
+
+T = (S, I, f, S0)
+
+S = {s1, s2}
+
+I = {a, c}
+
+S0 = s1
+
+f = {
+
+(s1, c, s2, c, -)
+
+}
+
+Rechazada
+
+Aceptada
+
+Caso 7:
+
+T = (S, I, f, S0)
+
+S = {s1, s2, s3, s4}
+
+I = {a, b}
+
+S0 = s1
+
+f = {
+
+(s1, a, s3, a, R),
+
+(s3, b, s4, b, R),
+
+(s4, B, s2, B, -)
+
+}
+
+Aceptada
+
+Rechazada
+
+Rechazada
+
+Caso 8:
+
+T = (S, I, f, S0)
+
+S = {s1, s2, s3}
+
+I = {a, b}
+
+S0 = s1
+
+f = {
+
+(s1, a, s3, a, L),
+
+(s3, B, s2, B, R)
+
+}
+
+Aceptada
+
+Rechazada
+
+Caso 9:
+
+T = (S, I, f, S0)
+
+S = {s1}
+
+I = {a}
+
+S0 = s1
+
+f = {
+
+(s1, a, s1, a, -)
+
+}
+
+Rechazada
+
+Rechazada
+
+Caso 10:
+
+T = (S, I, f, S0)
+
+S = {s1, s2, s3}
+
+I = {a, b}
+
+S0 = s1
+
+f = {
+
+(s1, a, s3, b, R),
+
+(s1, b, s3, a, R),
+
+(s3, a, s1, b, R),
+
+(s3, b, s1, a, R),
+
+(s1, B, s2, B, -),
+
+(s3, B, s2, B, -)
+
+}
+
+Aceptada
+
+Aceptada
+
+Aceptada
+
+Caso 11:
+
+T = (S, I, f, S0)
+
+S = {s1, s3}
+
+I = {a, b}
+
+S0 = s1
+
+f = {
+
+(s1, a, s3, a, R),
+
+(s3, b, s3, b, R)
+
+}
+
+Rechazada
+
+Rechazada
+
+Rechazada
+
+Caso 12:
+
+T = (S, I, f, S0)
+
+S = {s1, s2, s3}
+
+I = {a}
+
+S0 = s1
+
+f = {
+
+(s1, a, s3, a, R),
+
+(s3, B, s2, B, -)
+
+}
+
+Aceptada
+
+Rechazada
